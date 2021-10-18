@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tcc_Estoque_20-09</string>
+    <string name="title_home">Início</string>
+    <string name="title_dashboard">Novo Produto</string>
+    <string name="title_notifications">Relatório</string>
+    <string name="valor_1">Digite o produto...</string>
+    <string name="valor_2">Data de Validade</string>
+    <string name="valor_3">Data de Entrada</string>
+    <string name="valor_4">Data de Saída</string>
+    <string name="valor_5">Quantidade..</string>
+    <string name="valor_6">Cadastrar</string>
+    <string name="valor_7">IMAGEM</string>
+    <string name="valor_8">EDITAR</string>
+    <string name="valor_9">Procurar</string>
+    <string name="valor_10">Maior quantidade no estoque: </string>
+    <string name="valor_11">Menor quantidade no estoque: </string>
+    <string name="valor_12"></string>
+    <string name="valor_13">notificação</string>
+</resources>

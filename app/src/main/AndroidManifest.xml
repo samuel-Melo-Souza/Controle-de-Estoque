@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tcc_estoque_20_09">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_aplicativo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_aplicativo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tcc_Estoque_2009">
+        <activity
+            android:name=".ui.activity.TesteEditar"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activity.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"></activity>
+    </application>
+
+</manifest>
