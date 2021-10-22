@@ -6,6 +6,8 @@ public class Produtos implements Serializable {
 
     private int _id;
     private String nome;
+    private String unidade;
+    private String perecivel;
     private int quantidade;
     private int dataValidade;
 
@@ -14,9 +16,9 @@ public class Produtos implements Serializable {
         this.nome = nome;
         this.dataValidade = dataValidade;
         this.quantidade = quantidade;
+        this.unidade = unidade;
+        this.perecivel = perecivel;
     }
-
-
 
 
     public int get_id() {
@@ -24,8 +26,13 @@ public class Produtos implements Serializable {
     }
 
     public String getNome() {
-
         return nome;
+    }
+    public String getUnidade(){
+        return unidade;
+    }
+    public String getPerecivel(){
+        return perecivel;
     }
 
     public int getQuantidade() {
@@ -40,7 +47,7 @@ public class Produtos implements Serializable {
 
    @Override
     public  String toString() {
-       return "\n" + "Nome: " + nome + "\n Data de validade: " + dataValidade + "\n Quantidade : " + quantidade + "\n";
+       return "\n" + "Nome: " + nome + "\n Data de validade: " + dataValidade + "\n Quantidade : " + quantidade + "\n Unidade: " + unidade + "\n Perecivel: " + perecivel;
    }
 
 }

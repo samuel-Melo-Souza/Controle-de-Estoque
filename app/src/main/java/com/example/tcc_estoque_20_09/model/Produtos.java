@@ -11,6 +11,8 @@ public class Produtos implements Serializable {
     private Long _id;
     private String nome;
     private int quantidade;
+    private int dataValidade;
+    private String unidade;
 
     public void set_id(Long _id) {
         this._id = _id;
@@ -28,7 +30,8 @@ public class Produtos implements Serializable {
         this.dataValidade = dataValidade;
     }
 
-    private int dataValidade;
+    public void setUnidade(String unidade) { this.unidade = unidade; }
+
 
     public Produtos(Long _id, String nome,int dataValidade, int quantidade) {
         this._id = _id;
@@ -56,7 +59,7 @@ public class Produtos implements Serializable {
 
    @Override
     public  String toString() {
-       return "\n" + "Nome: " + nome + "\n Data de validade: " + dataValidade + "\n Quantidade : " + quantidade + "\n";
+       return "\n" + "Nome: " + nome + "\n Data de validade: " + dataValidade + "\n Quantidade: " + quantidade + "\n Unidade: " + "\n";
    }
 
 }

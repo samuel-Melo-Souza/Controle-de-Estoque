@@ -10,66 +10,56 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+
 
         <TextView
             android:id="@+id/nome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
             android:text="Nome Do Produto"
             app:layout_constraintStart_toEndOf="@id/sNome"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"/>
-
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Quantidade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="96dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="40dp"
             android:text="Quantidade"
-            app:layout_constraintStart_toEndOf="@id/sQuantidade"
+            app:layout_constraintStart_toEndOf="@+id/sQuantidade"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/dataValidade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="40dp"
-            android:text="DataValidade"
-            app:layout_constraintStart_toEndOf="@id/sDataValidade"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/dataEntrada"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="28dp"
             android:layout_marginTop="68dp"
-            android:text="DataEntrada"
-            app:layout_constraintStart_toEndOf="@id/sDataEntrada"
+            android:text="DataValidade"
+            app:layout_constraintStart_toEndOf="@+id/sDataValidade"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/sNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:text="Nome Do Produto:"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
             android:id="@+id/sQuantidade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="98dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
             android:text="Quantidade:"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -78,19 +68,9 @@
             android:id="@+id/sDataValidade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="68dp"
             android:text="Data de Validade:"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/sDataEntrada"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data da Entrada:"
-            android:layout_marginTop="70dp"
-            android:layout_marginLeft="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

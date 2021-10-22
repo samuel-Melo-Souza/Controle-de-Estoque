@@ -13,33 +13,28 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.tcc_estoque_20_09.BancoDeDados.BancoDados;
+import com.example.tcc_estoque_20_09.Produto.Produtos;
 import com.example.tcc_estoque_20_09.R;
 import com.example.tcc_estoque_20_09.databinding.FragmentNotificationsBinding;
 
 public class NotificationsFragment extends Fragment {
 
+    private Produtos produtos;
+    private Produtos produtoMaior;
     private NotificationsViewModel notificationsViewModel;
     private FragmentNotificationsBinding binding;
+    private View view;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+        //Referencias
 
+        //Criação do banco de dados
+        BancoDados bd = new BancoDados(getActivity(),1);
 
-        notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
-
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-        final TextView textView = binding.textView;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+        return view;
     }
 
     @Override

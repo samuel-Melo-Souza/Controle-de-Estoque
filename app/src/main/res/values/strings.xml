@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Tcc_Estoque_20-09</string>
+    <string name="app_name">Tcc_Estoque_20_09</string>
     <string name="title_home">Início</string>
     <string name="title_dashboard">Novo Produto</string>
     <string name="title_notifications">Relatório</string>
-    <string name="valor_1">Digite o produto...</string>
+    <string name="valor_1">Digite o produto</string>
     <string name="valor_2">Data de Validade</string>
     <string name="valor_3">Data de Entrada</string>
     <string name="valor_4">Data de Saída</string>
@@ -16,4 +16,23 @@
     <string name="valor_11">Menor quantidade no estoque: </string>
     <string name="valor_12"></string>
     <string name="valor_13">notificação</string>
+    <string name="valor_14">Perecivel</string>
+    <string-array name="unidades">
+        <item>KG</item>
+        <item>PEÇA</item>
+        <item>UNIDADE</item>
+        <item>PACOTE</item>
+        <item>CAIXA</item>
+        <item>LITRO</item>
+        <item>FARDO</item>
+        <item>VIDRO</item>
+        <item>FRASCO</item>
+        <item>BISNAGA</item>
+        <item>LATA</item>
+        <item>BALDE</item>
+    </string-array>
+    <string-array name="perecivel">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
 </resources>

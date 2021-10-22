@@ -3,6 +3,7 @@ package com.example.tcc_estoque_20_09.BancoDeDados;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -55,6 +56,7 @@ public class AdapterRecycler extends RecyclerView.Adapter <AdapterRecycler.myVie
         TextView nome;
         TextView quantidade;
         TextView dataValidade;
+        Spinner unidade;
 
 
         public myViewHolder(@NonNull View itemView) {
@@ -62,6 +64,7 @@ public class AdapterRecycler extends RecyclerView.Adapter <AdapterRecycler.myVie
 
             nome = itemView.findViewById(R.id.nome);
             quantidade = itemView.findViewById(R.id.Quantidade);
+            unidade = itemView.findViewById(R.id.spinnerUnidade);
             dataValidade = itemView.findViewById(R.id.dataValidade);
 
             SimpleMaskFormatter simpleMaskFormatter = new SimpleMaskFormatter ( "NN/NN/NNNN" );
